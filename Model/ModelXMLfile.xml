@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Model</name>
+    </assembly>
+    <members>
+        <member name="T:Model.DBModels.ApidemoContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Model.DBModels.ApidemoContext.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Model.DBModels.ApidemoContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Model.DBModels.ApidemoContext})">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:Model.DBModels.ApidemoContext.StudentTables">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Model.DBModels.ApidemoContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="optionsBuilder"></param>
+        </member>
+        <member name="M:Model.DBModels.ApidemoContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="T:Model.DBModels.StudentTable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.DBModels.StudentTable.StudentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.DBModels.StudentTable.StudentName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.DBModels.StudentTable.MobileNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.DBModels.StudentTable.City">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Model.RequestModels.StudentCreateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.RequestModels.StudentCreateRequest.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.RequestModels.StudentCreateRequest.MobileNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.RequestModels.StudentCreateRequest.City">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Model.RequestModels.StudentUpdateRequest">
+            <summary>
+            Update request which includes properties to be updated
+            </summary>
+        </member>
+        <member name="P:Model.RequestModels.StudentUpdateRequest.ID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.RequestModels.StudentUpdateRequest.Name">
+            <summary>
+            Name property 
+            </summary>
+        </member>
+        <member name="P:Model.RequestModels.StudentUpdateRequest.MobileNumber">
+            <summary>
+            Mobile.No property
+            </summary>
+        </member>
+        <member name="P:Model.RequestModels.StudentUpdateRequest.City">
+            <summary>
+            City 
+            </summary>
+        </member>
+        <member name="T:Model.ResponseModels.StudentDTO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.ResponseModels.StudentDTO.ID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.ResponseModels.StudentDTO.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.ResponseModels.StudentDTO.MobileNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.ResponseModels.StudentDTO.City">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Model.UserDTO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.UserDTO.userId">
+            <summary>
+            enter UserId 
+            </summary>
+        </member>
+        <member name="P:Model.UserDTO.userName">
+            <summary>
+            enter UserName 
+            </summary>
+        </member>
+        <member name="P:Model.UserDTO.Role">
+            <summary>
+            Enter userProperty
+            </summary>
+            
+        </member>
+        <member name="M:Model.UserDTO.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="userName"></param>
+            <param name="Role"></param>
+        </member>
+    </members>
+</doc>

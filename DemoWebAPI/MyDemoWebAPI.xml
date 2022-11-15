@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DemoWebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:DemoWebAPI.Controllers.StudentsController">
+            <summary>
+            CRUD operations using DB    
+            </summary>
+        </member>
+        <member name="M:DemoWebAPI.Controllers.StudentsController.#ctor(Model.DBModels.ApidemoContext)">
+            <summary>
+            Created constructor for students controller
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DemoWebAPI.Controllers.StudentsController.GetAllStudents">
+            <summary>
+            Get all students
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DemoWebAPI.Controllers.StudentsController.GetUserDetailsByUserId(System.Int32)">
+            <summary>
+            Get StudentDetails By ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DemoWebAPI.Controllers.StudentsController.CreateStudent(Model.RequestModels.StudentCreateRequest)">
+            <summary>
+            Create student
+            </summary>
+            <param name="studentCreateRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DemoWebAPI.Controllers.StudentsController.StudentUpdateRequest(System.Int32,Model.ResponseModels.StudentDTO)">
+            <summary>
+            
+            </summary>
+            <param name="ID"></param>
+            <param name="studentDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DemoWebAPI.Controllers.StudentsController.DeleteUser(System.Int32)">
+            <summary>
+            To delete existing user
+            </summary>
+            <param name="id">Provide UserId here</param>
+            <returns></returns>
+        </member>
+        <member name="T:DemoWebAPI.Controllers.UserController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DemoWebAPI.Controllers.UserController.GetUserDetails">
+            <summary>
+            To get a user detail
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DemoWebAPI.Controllers.UserController.InsertUserDetails(Model.UserDTO)">
+            <summary>
+            Insert A new user
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DemoWebAPI.Controllers.UserController.UpdateUserDetails(Model.UserDTO)">
+            <summary>
+            Update user Details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DemoWebAPI.Controllers.UserController.DeleteUserDetails(Model.UserDTO)">
+            <summary>
+            Delete User Details
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DemoWebAPI.Controllers.WeatherForecastController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DemoWebAPI.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{DemoWebAPI.Controllers.WeatherForecastController})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:DemoWebAPI.Controllers.WeatherForecastController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DemoWebAPI.WeatherForecast">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:DemoWebAPI.WeatherForecast.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:DemoWebAPI.WeatherForecast.TemperatureC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:DemoWebAPI.WeatherForecast.TemperatureF">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:DemoWebAPI.WeatherForecast.Summary">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
