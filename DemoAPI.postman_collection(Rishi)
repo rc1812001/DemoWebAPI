@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "2a16ea35-35d7-45a4-a370-429ce6cf2e86",
+		"name": "DemoAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24352639"
+	},
+	"item": [
+		{
+			"name": "CRUD(Without DB)User",
+			"item": [
+				{
+					"name": "InsertUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7134/Users/InsertUserDetails",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7134",
+							"path": [
+								"Users",
+								"InsertUserDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7134/Users/GetUserDetails",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7134",
+							"path": [
+								"Users",
+								"GetUserDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "text/plain"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": 0,\n  \"userName\": \"string\",\n  \"role\": \"string\"\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7134/Users/UpdateuserDetails",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7134",
+							"path": [
+								"Users",
+								"UpdateuserDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "text/plain"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": 0,\n  \"userName\": \"string\",\n  \"role\": \"string\"\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7134/Users/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7134",
+							"path": [
+								"Users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD operations without using a DB"
+		},
+		{
+			"name": "CRUDOperationsUsingDB(StudentAPI)",
+			"item": [
+				{
+					"name": "GetAllStudents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7134/Students",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7134",
+							"path": [
+								"Students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetStudentByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7134/Students/2003",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7134",
+							"path": [
+								"Students",
+								"2003"
+							]
+						},
+						"description": "This Request fetches student details by using studentId as parameter"
+					},
+					"response": []
+				},
+				{
+					"name": "CreateStudent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"hari\",\r\n  \"mobileNumber\": \"4342625267\",\r\n  \"city\": \"baroda\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7134/Students/Create",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7134",
+							"path": [
+								"Students",
+								"Create"
+							]
+						},
+						"description": "Creates a new student"
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateStudent",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 4003,\r\n  \"name\": \"manhar\",\r\n  \"mobileNumber\": \"9999999\",\r\n  \"city\":\"gandhinagar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7134/Students/update/4003",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7134",
+							"path": [
+								"Students",
+								"update",
+								"4003"
+							]
+						},
+						"description": "Update Student Details by using student Id as a parameter"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteStudent",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7134/Students/Delete/4003",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7134",
+							"path": [
+								"Students",
+								"Delete",
+								"4003"
+							]
+						},
+						"description": "Used to delete student details by using StudentId as parameter \r\nNote: check status code it shows 200 (because there isnt any message displayed)"
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD operations on Student API using a DATABASE"
+		}
+	]
+}
